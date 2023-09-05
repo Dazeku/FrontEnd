@@ -1,0 +1,54 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+.title{
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.buttonlike{
+  text-align: center; 
+  border: aqua 2px double;
+}
+
+.forms{
+  margin-left: 25vw; 
+  margin-top: 100px;
+  border: 2px  double hsla(160, 100%, 37%, 1); 
+  background-color: rgb(34, 33, 33); 
+  width: 40vw;
+  text-align: center;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
